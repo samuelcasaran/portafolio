@@ -85,15 +85,7 @@
     
   } 
   @media (max-width:500px){
-.poli{
-  display: none;
-}
-   .poli-2 img{
-    display: none; 
-   } 
-   .poli-3{
-    display: none;
-   }
+
 
     .perfil{
       width: 350px;
