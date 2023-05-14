@@ -17,7 +17,11 @@
   
 
 
-  @media (max-width: 800px) {
+  @media (max-width: 800px) { 
+    .pr{
+      font-size: 18px;
+
+    }
     .menu a{
    
       margin: 25px;
@@ -88,7 +92,7 @@
 
 
     .perfil{
-      width: 350px;
+      width: 320px;
       margin-top: 130px;
       padding: 0px
       

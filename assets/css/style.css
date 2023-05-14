@@ -1,23 +1,32 @@
-*{
+*{ 
+ 
     margin: 0%;
     padding: 0%;
     box-sizing: border-box; 
     font-family: 'Inter', sans-serif;
-    
+    max-width: 1400px;
 
-} 
+}  
+
 body{
     background-image: url(../img/fondo.png); 
     animation: aparicion 1s ease-in-out; 
+    overflow-x: hidden; 
 
 } 
+main{
+  overflow-x: hidden;
+}
 
 .menu{
   display: flex;
   justify-content: center;
 }
 
-
+.container-fluid {
+  overflow-x: hidden; 
+ 
+}
 
 .menu a{
     text-decoration: none; 
