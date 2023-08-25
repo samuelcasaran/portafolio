@@ -1,25 +1,15 @@
-*{ 
- 
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box; 
-  font-family: 'Inter', sans-serif;
-
-}   
-
-
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Inconsolata:wght@300&display=swap");
 
 
 body {
   overflow: hidden;
-
   height: 100vh;
-  background-image: url(../img/fondo.png);  
+  background-image: url(../img/fondo.png);   
+  background-repeat: no-repeat;
   background-size: cover; 
   background-position: top;
   cursor: none !important;
   line-height: 200%;
-
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -32,18 +22,8 @@ body {
 }
 
 
-header{
-  position: fixed;
-	top: 0;
-	left: 0;
-	right: 0; 
-  
-	background-color: rgba(0, 0, 0, 0);
-	z-index: 1000;
-	transition: background-color 0.3s ease-in-out;
-}
 .menu{
-  position: fixed;
+  position: absolute;
   display: flex;  
   left: 0px;
   flex-flow: column wrap;
@@ -162,7 +142,8 @@ transition: ease-in-out 0.6s;
   position: relative;
   z-index: 1;
   height: 100vh;
-  overflow: hidden;
+  overflow-x: hidden; 
+  overflow-y: hidden;
   pointer-events: none; 
 
 }
@@ -565,4 +546,33 @@ video {
   to {
     transform: rotate(360deg);
   }
+}
+@media screen and (max-width: 500px) {   
+
+  .menu {
+    display: flex;  
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0; 
+    height: 40px;
+    text-align: center;  
+    margin: 0 auto;
+    width: 85%;
+    border-radius: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease-in-out; 
+    -webkit-background-color: rgba(75, 75, 75, 0.078);
+    -webkit-backdrop-filter: blur(10px);
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    background-color: rgba(75, 75, 75, 0.078);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
+
 }

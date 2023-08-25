@@ -84,11 +84,12 @@
 
     .perfil{
       width: 320px;
-    }
-
+    } 
+   
     
   } 
-  @media (max-width:500px){
+  @media (max-width:500px){ 
+
 
     header{
       -webkit-background-color: rgba(75, 75, 75, 0.078);
@@ -161,28 +162,63 @@ padding: 0;
 
 /* Estilo para el botón de desplegar */
 
-.menu-toggle { 
-  transition: 0.3s  ease-in-out;
-  display: none; /* El botón estará oculto en pantallas grandes */
-} 
+
 .menu2 {
-  display: flex;
-  flex-direction: column;
+  display: flex; 
+  justify-content: center;
   align-items: center;
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  bottom: 20px;
   left: 0;
-  width: 100%;
+  right: 0;
+  text-align: center;  
+  margin: 0 auto;
+  width: 90%;
+  border-radius: 100px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  display: none; 
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out; 
+	-webkit-background-color: rgba(75, 75, 75, 0.078);
+	-webkit-backdrop-filter: blur(10px);
+	-webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+  background-color: rgba(75, 75, 75, 0.078);
+	backdrop-filter: blur(10px);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
 }
 
 /* Estilo para el botón de desplegar */
 
 
 /* Estilos para el menú desplegable en pantallas pequeñas (menos de 700px) */
-@media screen and (max-width: 500px) { 
+@media screen and (max-width: 500px) {   
+  .container-fluid {
+    overflow: visible; 
+   
+  } 
+  .menu2 {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;  
+    margin: 0 auto;
+    width: 90%;
+    border-radius: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease-in-out; 
+    -webkit-background-color: rgba(75, 75, 75, 0.078);
+    -webkit-backdrop-filter: blur(10px);
+    -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    display: flex;
+    background-color: rgba(75, 75, 75, 0.078);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+  }
  
   .menu { 
     transition: 0.3s  ease-in-out;
@@ -206,42 +242,12 @@ padding: 0;
     text-decoration: none;
     color: #ffffff; 
     transition: 0.3s  ease-in-out; 
-    border-bottom: 1px solid white; 
     font-weight: bold; 
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif; 
   }
-  .menu-toggle { 
-    transition: 0.3s  ease-in-out;
-      display: block; /* Muestra el botón en pantallas pequeñas */
-      position: absolute;
-      top: 10px;
-      right: 20px;
-      font-size: 20px;
-      background: transparent;
-      border: none;
-      cursor: pointer; 
-      color: white; 
-      transition: ease-in-out; 
-      z-index: 9999;
-  }
-
-  .menu2.show {   
-    background-color: rgba(0, 0, 0, 0.598);
-    backdrop-filter: blur(10px); 
-
-    transition: 0.3s  ease-in-out;
-  display: flex; 
-  flex-flow: column wrap;
-  justify-content: center; 
-  align-items: center;
+  
 
 
-
-  transition: opacity 0.3s ease-in-out;
-
-height: 100vh; 
-  /*  Muestra el menú cuando se hace clic en el botón */
-  } 
 
 
   
