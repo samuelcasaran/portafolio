@@ -191,12 +191,17 @@ padding: 0;
 
 
 /* Estilos para el menú desplegable en pantallas pequeñas (menos de 700px) */
-@media screen and (max-width: 500px) {   
+@media screen and (max-width: 500px) {    
+ 
   .container-fluid {
     overflow: visible; 
    
-  } 
-  .menu2 {
+  }  
+ #contenido{
+  overflow: hidden;
+ }
+  .menu2 { 
+    z-index: 100;
     display: flex; 
     justify-content: center;
     align-items: center;

@@ -12,7 +12,7 @@
 
 
 body{
-    background-image: url(../img/fondo.png);  
+    background-image: url(../img/fondo.jpg);  
     background-position: top;
     animation: aparicion 1s ease-in-out; 
     overflow-x: hidden;   
@@ -215,7 +215,7 @@ footer p{
           animation: rote 5s infinite linear;
   transition: 4s ease-in-out;
 }
-.poli-2 { 
+.poli-2 {  
   display: none;
   position: absolute;
   -webkit-animation: rote 5s infinite linear;
